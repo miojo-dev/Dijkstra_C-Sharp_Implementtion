@@ -3,20 +3,20 @@ namespace Dijkstra_C_Sharp_Implementation;
 public class Graph
 {
     private int Degree { get; }
-    private unsafe Vertice*[] Vertices { get; set; }
+    private unsafe Vertex*[] Vertex { get; set; }
 
     public unsafe Graph(int degree)
     {
         this.Degree = degree;
-        Vertices = new Vertice*[this.Degree];
+        Vertex = new Vertex*[this.Degree];
 
         for (int i = 0; i < degree; i++)
         {
-            Vertices[i] = null;
+            Vertex[i] = null;
         }
     }
     
-    public void AddEdge(Vertice vertice)
+    public void AddEdge(Vertex vertex)
     {
     }
 }
