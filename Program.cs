@@ -21,15 +21,15 @@ public static class MainClass
 
     private static void Menu()
     {
-        while (_input != "3")
+        while (true)
         {
             Console.Clear();
             Console.WriteLine("|---- *+=~- | Menu | -~=+* ----|");
             Console.WriteLine("|       Select an option       |");
             Console.WriteLine("|                              |");
-            Console.WriteLine("| 1. Initialize Graphs         |");
-            Console.WriteLine("| 2. Run Dijkstra's Algorithm  |");
-            Console.WriteLine("| 3. Exit                      |");
+            Console.WriteLine("| 1: Initialize Graphs         |");
+            Console.WriteLine("| 2: Run Dijkstra's Algorithm  |");
+            Console.WriteLine("| 3: Exit                      |");
             Console.WriteLine("|______________________________|");
             _input = Console.ReadLine();
 
@@ -40,7 +40,7 @@ public static class MainClass
                 case "2":
                     break;
                 case "3":
-                    break;
+                    return;
             }
         }
     }

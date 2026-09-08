@@ -4,7 +4,7 @@ public class Graph
 {
     private string Name { get; }
     private int Degree { get; }
-    private Vertex[] Connections { get; set; }
+    private Vertex[] Connections { get; }
 
     public Graph(string name,int degree)
     {
