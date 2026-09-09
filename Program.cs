@@ -24,7 +24,7 @@ public static class MainClass
         while (true)
         {
             Console.Clear();
-            Console.WriteLine("|---- *+=~- | Menu | -~=+* ----|");
+            Console.WriteLine(" ___-~=+*#@ | Menu | @#*+=~-___ ");
             Console.WriteLine("|       Select an option       |");
             Console.WriteLine("|                              |");
             Console.WriteLine("| 1: Initialize Graphs         |");

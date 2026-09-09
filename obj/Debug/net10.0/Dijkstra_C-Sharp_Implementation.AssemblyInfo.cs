@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dijkstra_C-Sharp_Implementation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+279eefe11f3391c49612d4925e99ec6e01aa7802")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f5984f6105b873adb70794ef475c802937b4458")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dijkstra_C-Sharp_Implementation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dijkstra_C-Sharp_Implementation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

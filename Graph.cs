@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices.JavaScript;
+
 namespace Dijkstra_C_Sharp_Implementation;
 
 public class Graph
@@ -6,7 +8,7 @@ public class Graph
     private int Degree { get; }
     private Vertex[] Connections { get; }
 
-    public Graph(string name,int degree)
+    public Graph(string name, int degree)
     {
         this.Name = name;
         this.Degree = degree;
@@ -26,7 +28,20 @@ public class Graph
 
         return false;
     }
-    
+
+    public Vertex? TryFindVertex(string name)
+    {
+        for (var i = 0; i < Connections.Length; i++)
+        {
+            if (Connections[i].GetName() == name)
+            {
+                return Connections[i];
+            }
+        }
+
+        return null;
+    }
+
     public string GetName() => Name;
     public int GetDegree() => Degree;
     public Vertex[] GetConnections() => Connections;
