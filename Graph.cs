@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices.JavaScript;
-
 namespace Dijkstra_C_Sharp_Implementation;
 
 public class Vertex
