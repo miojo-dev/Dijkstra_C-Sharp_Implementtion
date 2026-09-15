@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {}
   },
@@ -8,26 +8,24 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/home/joao/.nuget/packages/": {}
+    "C:\\Users\\1027432\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joao/RiderProjects/Dijkstra_C-Sharp_Implementtion/Dijkstra_C-Sharp_Implementation.csproj",
+      "projectUniqueName": "C:\\Users\\1027432\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\Dijkstra_C-Sharp_Implementation.csproj",
       "projectName": "Dijkstra_C-Sharp_Implementation",
-      "projectPath": "/home/joao/RiderProjects/Dijkstra_C-Sharp_Implementtion/Dijkstra_C-Sharp_Implementation.csproj",
-      "packagesPath": "/home/joao/.nuget/packages/",
-      "outputPath": "/home/joao/RiderProjects/Dijkstra_C-Sharp_Implementtion/obj/",
+      "projectPath": "C:\\Users\\1027432\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\Dijkstra_C-Sharp_Implementation.csproj",
+      "packagesPath": "C:\\Users\\1027432\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1027432\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/joao/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\1027432\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/home/joao/.nuget/NuGet/csvhelper": {},
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -47,7 +45,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -69,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Users\\1027432\\.dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
