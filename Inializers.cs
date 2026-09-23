@@ -1,6 +1,6 @@
 ﻿namespace Dijkstra_C_Sharp_Implementation;
 
-public static class Intializers
+public static class Initializers
 {
     private static readonly string[] GraphNames =
     [
@@ -44,9 +44,9 @@ public static class Intializers
     {
     };
 
-    public static void InitializeGraphs()
+    public static void ResetGraphs()
     {
-        foreach (var vertex in GraphNames)
+        foreach (var name in GraphNames)
         {
         }
     }

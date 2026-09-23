@@ -33,9 +33,15 @@ public static class MainClass
             switch (_input)
             {
                 case "1":
-                    Intializers.InitializeGraphs();
+                    Initializers.ResetGraphs();
                     break;
                 case "2":
+                    Console.WriteLine("What Vertex you wanna find?");
+                    var toFind = Console.ReadLine();
+                    Console.WriteLine("Where do you wanna start?");
+                    var toStart = Console.ReadLine();
+                    Console.Clear();
+                    Dijkstra.FindShortestPath(toStart, toFind);
                     break;
                 case "3":
                     return;
