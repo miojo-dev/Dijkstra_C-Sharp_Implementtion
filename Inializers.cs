@@ -1,6 +1,6 @@
 ﻿namespace Dijkstra_C_Sharp_Implementation;
 
-public static class Initializers
+public static class GraphManager
 {
     public static int BlockedPathCost = 1000;
     
@@ -48,10 +48,25 @@ public static class Initializers
         [10, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, 22, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, 18, BlockedPathCost, BlockedPathCost, 24, BlockedPathCost, 30, BlockedPathCost, BlockedPathCost],
     ];
 
+    private static readonly Vertex[] Vertexes =
+    [
+    ];
+
     public static void ResetGraphs()
     {
         foreach (var name in GraphNames)
         {
         }
+    }
+
+    public static Vertex GetVertex(string name)
+    {
+        var i = 0;
+        while (Vertexes[i].GetName() != name)
+        {
+            i++;
+        }
+
+        return Vertexes[i];
     }
 }
