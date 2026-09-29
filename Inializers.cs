@@ -119,25 +119,9 @@ public static class GraphManager
         [BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, 24, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, 18, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, 20, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost, BlockedPathCost]
     ];
 
-    private static readonly Vertex[] Vertexes =
-    [
-    ];
-
     public static void ResetGraphs()
     {
         foreach (var name in GraphNames)
         {
         }
     }
-
-    public static Vertex GetVertex(string name)
-    {
-        var i = 0;
-        while (Vertexes[i].GetName() != name)
-        {
-            i++;
-        }
-
-        return Vertexes[i];
-    }
-}
