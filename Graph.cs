@@ -4,7 +4,7 @@ public class Vertex
 {
     private string Name { get; }
     private int Degree { get; }
-    private Edge[] Connections { get; set; }
+    private Edge[] Connections { get; }
 
     public Vertex(string name, int degree)
     {
@@ -29,6 +29,7 @@ public class Vertex
 
     public string GetName() => Name;
     public int GetDegree() => Degree;
+    public Edge[] GetConnections() => Connections;
     public Edge? TryFindVEdge(string name)
     {
         for (var i = 0; i < Connections.Length; i++)

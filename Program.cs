@@ -33,7 +33,7 @@ public static class MainClass
             switch (_input)
             {
                 case "1":
-                    Initializers.ResetGraphs();
+                    GraphManager.ResetGraphs();
                     break;
                 case "2":
                     Console.WriteLine("What Vertex you wanna find?");
