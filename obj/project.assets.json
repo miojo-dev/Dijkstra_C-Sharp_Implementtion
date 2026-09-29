@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\1027432\\.nuget\\packages\\": {}
+    "C:\\Users\\1041298\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1027432\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\Dijkstra_C-Sharp_Implementation.csproj",
+      "projectUniqueName": "C:\\Users\\1041298\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\Dijkstra_C-Sharp_Implementation.csproj",
       "projectName": "Dijkstra_C-Sharp_Implementation",
-      "projectPath": "C:\\Users\\1027432\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\Dijkstra_C-Sharp_Implementation.csproj",
-      "packagesPath": "C:\\Users\\1027432\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1027432\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\obj\\",
+      "projectPath": "C:\\Users\\1041298\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\Dijkstra_C-Sharp_Implementation.csproj",
+      "packagesPath": "C:\\Users\\1041298\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1041298\\RiderProjects\\Dijkstra_C-Sharp_Implementtion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\1027432\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\1041298\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\1027432\\.dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Users\\1041298\\.dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
