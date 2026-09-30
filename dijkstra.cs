@@ -14,6 +14,24 @@ public static class Dijkstra
         Vertex endVertex = GraphManager.GetVertex(wanted);
         Vertex currentVertex = startVertex;
 
-        startVertex.GetConnections();
+        while (currentVertex != endVertex)
+        {
+            //if (currentVertex.)
+        }
+    }
+
+    public static unsafe void Short(Vertex start, Vertex end)
+    {
+        if (start != end)
+        {
+            foreach (var vrtx in GraphManager.CostList)
+            {
+                
+            }
+        }
+        else
+        {
+            
+        }
     }
 }

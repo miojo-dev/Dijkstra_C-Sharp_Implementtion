@@ -4,22 +4,24 @@ public class Vertex
 {
     private string Name { get; }
     private int Degree { get; }
-    private Edge[] Connections { get; }
+    public unsafe Vertex*[] Connections;
+    public unsafe Vertex* ClosestVertex = null;
+    public int Weight = GraphManager.BlockedPathCost;
 
-    public Vertex(string name, int degree)
+    public unsafe Vertex(string name, int degree)
     {
         this.Name = name;
         this.Degree = degree;
-        Connections = new Edge[this.Degree];
+        Connections = new Vertex*[this.Degree];
     }
 
-    public bool TryAddConnection(string name, Vertex connectedGraph, int distance)
+    public unsafe bool TryAddConnection(Vertex connectedGraph)
     {
         for (var i = 0; i < Connections.Length; i++)
         {
-            if (Connections[i].GetName() == string.Empty)
+            if (Connections[i] != null)
             {
-                Connections[i] = new Edge(name, connectedGraph, distance);
+                Connections[i] = &connectedGraph;
                 return true;
             }
         }
@@ -29,17 +31,4 @@ public class Vertex
 
     public string GetName() => Name;
     public int GetDegree() => Degree;
-    public Edge[] GetConnections() => Connections;
-    public Edge? TryFindVEdge(string name)
-    {
-        for (var i = 0; i < Connections.Length; i++)
-        {
-            if (Connections[i].GetName() == name)
-            {
-                return Connections[i];
-            }
-        }
-
-        return null;
-    }
 }
