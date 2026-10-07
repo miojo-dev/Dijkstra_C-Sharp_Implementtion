@@ -33,7 +33,6 @@ public static class MainClass
             switch (_input)
             {
                 case "1":
-                    GraphManager.ResetGraphs();
                     break;
                 case "2":
                     Console.WriteLine("What Vertex you wanna find?");
@@ -41,7 +40,10 @@ public static class MainClass
                     Console.WriteLine("Where do you wanna start?");
                     var toStart = Console.ReadLine();
                     Console.Clear();
-                    Dijkstra.FindShortestPath(toStart, toFind);
+                    foreach (vertex in Dijkstra.FindShortestPath(toStart, toFind)){
+                    Console.Write();
+                }
+                    ;
                     break;
                 case "3":
                     return;

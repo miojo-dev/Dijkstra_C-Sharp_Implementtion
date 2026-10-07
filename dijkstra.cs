@@ -9,29 +9,49 @@ public static class Dijkstra
             Console.WriteLine("Start and destiny Vertexes are the same");
             return;
         }
-
-        Vertex startVertex = GraphManager.GetVertex(start);
-        Vertex endVertex = GraphManager.GetVertex(wanted);
-        Vertex currentVertex = startVertex;
-
-        while (currentVertex != endVertex)
-        {
-            //if (currentVertex.)
-        }
     }
 
-    public static unsafe void Short(Vertex start, Vertex end)
+    public static Vertex[] FindPath(string start, string wanted)
     {
-        if (start != end)
+        Vertex[] path = new Vertex[] { };
+        int starting = GraphManager.NameToId(start);
+        int ending = GraphManager.NameToId(wanted);
+        int current = ending;
+        int i;
+
+        for (i = 0; i < 24; i++)
         {
-            foreach (var vrtx in GraphManager.CostList)
+            if (GraphManager.NameToId(wanted) != i)
             {
-                
+                for (int j = 0; j < 24; j++)
+                {
+                    if (GraphManager.CostList[i][j] != GraphManager.BlockedPathCost)
+                    {
+                        if (GraphManager.CostList[i][j] < GraphManager.Vertexes[j].Weight)
+                        {
+                            GraphManager.Vertexes[j].ClosestVertex = i;
+                            GraphManager.Vertexes[j].Weight = GraphManager.CostList[i][j];
+
+                            if (i == starting)
+                            {
+                                GraphManager.Vertexes[j].Weight =
+                                    GraphManager.CostList[i][j] + GraphManager.Vertexes[i].Weight;
+                            }
+                        }
+                    }
+                }
             }
         }
-        else
+
+        i = 0;
+
+        while (current != starting)
         {
-            
+            path[i] = GraphManager.Vertexes[current];
+            i++;
+            current = GraphManager.Vertexes[current].ClosestVertex;
         }
+        
+        return path.Reverse().ToArray();
     }
 }
