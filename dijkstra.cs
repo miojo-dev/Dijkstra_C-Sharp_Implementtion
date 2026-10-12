@@ -54,4 +54,27 @@ public static class Dijkstra
         
         return path.Reverse().ToArray();
     }
+    
+    public static void PrintPath(Vertex[] path, int totalCost)
+    {
+        if (path.Length == 0)
+        {
+            Console.WriteLine("Nenhum caminho encontrado.");
+            return;
+        }
+
+        Console.Write("Caminho encontrado: ");
+
+        for (int i = 0; i < path.Length; i++)
+        {
+            Console.Write(GraphManager.GraphNames[path[i].Id]);
+
+            if (i < path.Length - 1)
+            {
+                Console.Write(" -> ");
+            }
+        }
+        Console.WriteLine();
+        Console.WriteLine($"Custo total: {totalCost}");
+    }
 }
