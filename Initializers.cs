@@ -12,6 +12,30 @@ public static class GraphManager
 
     public static readonly Vertex[] Vertexes =
     [
+        new Vertex { Id = 0 },
+        new Vertex { Id = 1 },
+        new Vertex { Id = 2 },
+        new Vertex { Id = 3 },
+        new Vertex { Id = 4 },
+        new Vertex { Id = 5 },
+        new Vertex { Id = 6 },
+        new Vertex { Id = 7 },
+        new Vertex { Id = 8 },
+        new Vertex { Id = 9 },
+        new Vertex { Id = 10 },
+        new Vertex { Id = 11 },
+        new Vertex { Id = 12 },
+        new Vertex { Id = 13 },
+        new Vertex { Id = 14 },
+        new Vertex { Id = 15 },
+        new Vertex { Id = 16 },
+        new Vertex { Id = 17 },
+        new Vertex { Id = 18 },
+        new Vertex { Id = 19 },
+        new Vertex { Id = 20 },
+        new Vertex { Id = 21 },
+        new Vertex { Id = 22 },
+        new Vertex { Id = 23 }
     ];
 
     public static readonly int[][] CostList =

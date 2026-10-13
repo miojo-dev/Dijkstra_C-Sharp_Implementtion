@@ -59,11 +59,11 @@ public static class Dijkstra
     {
         if (path.Length == 0)
         {
-            Console.WriteLine("Nenhum caminho encontrado.");
+            Console.WriteLine("No path found.");
             return;
         }
 
-        Console.Write("Caminho encontrado: ");
+        Console.Write("Path found: ");
 
         for (int i = 0; i < path.Length; i++)
         {
@@ -75,6 +75,6 @@ public static class Dijkstra
             }
         }
         Console.WriteLine();
-        Console.WriteLine($"Custo total: {totalCost}");
+        Console.WriteLine($"Total cost: {totalCost}");
     }
 }
