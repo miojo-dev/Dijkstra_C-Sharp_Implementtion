@@ -2,7 +2,7 @@
 
 public static class GraphManager
 {
-    public static int BlockedPathCost = 1000;
+    public const int BlockedPathCost = 1000;
 
     public static readonly string[] GraphNames =
     [
@@ -10,32 +10,32 @@ public static class GraphManager
         "SD7", "SD8", "S1", "S2", "S3", "S4", "S5"
     ];
 
-    public static readonly Vertex[] Vertexes =
+    public static Vertex[] Vertexes =
     [
-        new Vertex { Id = 0 },
-        new Vertex { Id = 1 },
-        new Vertex { Id = 2 },
-        new Vertex { Id = 3 },
-        new Vertex { Id = 4 },
-        new Vertex { Id = 5 },
-        new Vertex { Id = 6 },
-        new Vertex { Id = 7 },
-        new Vertex { Id = 8 },
-        new Vertex { Id = 9 },
-        new Vertex { Id = 10 },
-        new Vertex { Id = 11 },
-        new Vertex { Id = 12 },
-        new Vertex { Id = 13 },
-        new Vertex { Id = 14 },
-        new Vertex { Id = 15 },
-        new Vertex { Id = 16 },
-        new Vertex { Id = 17 },
-        new Vertex { Id = 18 },
-        new Vertex { Id = 19 },
-        new Vertex { Id = 20 },
-        new Vertex { Id = 21 },
-        new Vertex { Id = 22 },
-        new Vertex { Id = 23 }
+        new Vertex { Id = 0, Weight = BlockedPathCost },
+        new Vertex { Id = 1, Weight = BlockedPathCost },
+        new Vertex { Id = 2, Weight = BlockedPathCost },
+        new Vertex { Id = 3, Weight = BlockedPathCost },
+        new Vertex { Id = 4, Weight = BlockedPathCost },
+        new Vertex { Id = 5, Weight = BlockedPathCost },
+        new Vertex { Id = 6, Weight = BlockedPathCost },
+        new Vertex { Id = 7, Weight = BlockedPathCost },
+        new Vertex { Id = 8, Weight = BlockedPathCost },
+        new Vertex { Id = 9, Weight = BlockedPathCost },
+        new Vertex { Id = 10, Weight = BlockedPathCost },
+        new Vertex { Id = 11, Weight = BlockedPathCost },
+        new Vertex { Id = 12, Weight = BlockedPathCost },
+        new Vertex { Id = 13, Weight = BlockedPathCost },
+        new Vertex { Id = 14, Weight = BlockedPathCost },
+        new Vertex { Id = 15, Weight = BlockedPathCost },
+        new Vertex { Id = 16, Weight = BlockedPathCost },
+        new Vertex { Id = 17, Weight = BlockedPathCost },
+        new Vertex { Id = 18, Weight = BlockedPathCost },
+        new Vertex { Id = 19, Weight = BlockedPathCost },
+        new Vertex { Id = 20, Weight = BlockedPathCost },
+        new Vertex { Id = 21, Weight = BlockedPathCost },
+        new Vertex { Id = 22, Weight = BlockedPathCost },
+        new Vertex { Id = 23, Weight = BlockedPathCost }
     ];
 
     public static readonly int[][] CostList =
@@ -184,6 +184,15 @@ public static class GraphManager
             BlockedPathCost, BlockedPathCost, BlockedPathCost
         ]
     ];
+
+    public static void ResetVertexArray()
+    {
+        foreach (var vertex in Vertexes)
+        {
+            vertex.Weight = BlockedPathCost;
+            vertex.ClosestVertex = -1;
+        }
+    }
 
     public static int NameToId(string Name)
     {
