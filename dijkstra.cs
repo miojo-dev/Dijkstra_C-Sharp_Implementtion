@@ -114,9 +114,9 @@ public static class Dijkstra
                     Console.Write(" -> ");
                 }
             }
-
-            Console.Write($"Total Cost: {path[^1].Weight}");
+            
             Console.WriteLine();
+            Console.Write($"Total Cost: {path[^1].Weight}");
         }
     }
 }
