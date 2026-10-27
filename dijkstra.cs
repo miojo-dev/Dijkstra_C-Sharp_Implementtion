@@ -7,6 +7,7 @@ public static class Dijkstra
         int starting = GraphManager.NameToId(start);
         int ending = GraphManager.NameToId(wanted);
         int count = GraphManager.Vertexes.Length;
+        int totalCost = 0;
 
         if (starting == -1 || ending == -1)
         {
@@ -72,7 +73,6 @@ public static class Dijkstra
             path.Add(GraphManager.Vertexes[pathNode]);
             if (pathNode == starting)
             {
-                path.Reverse();
                 return [.. path];
             }
 
@@ -84,6 +84,7 @@ public static class Dijkstra
 
     public static void PrintPath(Vertex[] path)
     {
+        path = path.Reverse().ToArray();
         if (path.Length == 0)
         {
             Console.WriteLine("Array is null or empty. No path found.");
@@ -101,6 +102,7 @@ public static class Dijkstra
                     Console.Write(" -> ");
                 }
             }
+            
 
             Console.WriteLine();
             Console.Write("Weight: ");
@@ -113,6 +115,8 @@ public static class Dijkstra
                 {
                     Console.Write(" -> ");
                 }
+                
+                
             }
             
             Console.WriteLine();
